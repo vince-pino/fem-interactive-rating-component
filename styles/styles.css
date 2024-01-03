@@ -1,0 +1,145 @@
+body {
+  height: 100vh;
+  font-family: Overpass, sans-serif;
+  background-color: hsl(216, 12%, 8%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 25%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.star {
+  background-color: hsl(213, 19%, 25%);
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.title {
+  color: white;
+}
+
+.description {
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-choice span {
+  background-color: hsl(213, 19%, 25%);
+  color: hsl(217, 12%, 63%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out,
+              color 0.3s ease-in-out,
+              font-weight 0.3s ease-in-out;
+}
+
+.rating-choice span:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+  font-weight: 700;
+}
+
+.rating-choice span.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-weight: 700;
+}
+
+button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Overpass, sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out,
+              color 0.3s ease-in-out,
+              font-weight 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+}
+
+.thank-you-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank-you-card img {
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+.rating {
+  background-color: hsl(213, 19%, 25%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.thank-you-title {
+  color: white;
+  margin-bottom: 0;
+}
+
+.thank-you-description {
+  color: hsl(216, 12%, 54%);
+  font-size: 14.8px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.thank-you-card {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 80%;
+  }
+
+  
+  
+}
